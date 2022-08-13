@@ -3,4 +3,4 @@ project(ClassesAndObjects)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(ClassesAndObjects main.cpp Person.cpp Person.h)
+add_executable(ClassesAndObjects main.cpp Person.cpp Person.h Tweeter.h Tweeter.cpp status.h)

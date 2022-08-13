@@ -5,19 +5,20 @@
 #ifndef CLASSESANDOBJECTS_PERSON_H
 #define CLASSESANDOBJECTS_PERSON_H
 #include <string>
-
+using namespace std;
 
 
 class Person {
 private:
-    std::string firstname;
-    std::string lastname;
+    string firstname;
+    string lastname;
     int arbitrarynumber;
 
 public:
-    Person(std::string first, std::string last, int arbitrary);
-    Person()=default;
-    std::string getName();
+    Person(string first, string last, int arbitrary);
+    Person();  // Default constructor
+    ~Person();  // destructor
+    string getName();
 };
 
 
