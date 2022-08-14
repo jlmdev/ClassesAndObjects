@@ -16,9 +16,12 @@ private:
 
 public:
     Person(string first, string last, int arbitrary);
-    Person();  // Default constructor
-    ~Person();  // destructor
-    string getName();
+    ~Person();  // Destructor
+    string GetName() const;
+    int GetNumber() const {return arbitrarynumber;}
+    void SetNumber(int number) {arbitrarynumber = number;}
+    bool operator<(Person const& p) const;
+    bool operator<(int i) const;
 };
 
 
